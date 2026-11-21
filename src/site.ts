@@ -1,4 +1,4 @@
-export const SITE_NAME = "datascience";
+export const SITE_NAME = "rising.sh data";
 export const SITE_URL = "https://data.rising.sh";
 export const SITE_TITLE = "Análisis y pronósticos con datos públicos";
 export const SITE_DESCRIPTION =
