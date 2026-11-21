@@ -30,16 +30,21 @@ export function Document(props: { meta: Meta; stylesheet: string; children: JSX.
         <meta property="og:title" content={props.meta.title} />
         <meta property="og:description" content={props.meta.description} />
         <meta property="og:url" content={url} />
-        <meta name="twitter:card" content="summary" />
-        <link rel="icon" href="data:," />
+        <meta property="og:image" content={`${SITE_URL}/og.png`} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="icon" href="/favicon.ico" sizes="32x32" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="stylesheet" href={props.stylesheet} />
       </head>
       <body>
         <header class="site-header">
           <div class="page">
             <a class="brand" href="/" aria-label={SITE_NAME}>
-              <span>data</span>
-              <span class="accent">science</span>
+              <span>rising.sh </span>
+              <span class="accent">data</span>
             </a>
           </div>
         </header>
